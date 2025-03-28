@@ -6,7 +6,6 @@ yarn-error.log*
 
 # Tailwind CSS
 src/output.css
-css/output.css
 
 # Environment Variables
 .env
