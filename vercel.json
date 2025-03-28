@@ -1,4 +1,8 @@
 {
-    "rewrites": [{ "source": "/", "destination": "/pages/index.html" }],
-    "staticFiles": "public"
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/pages/index.html"
+        }
+    ]
 }

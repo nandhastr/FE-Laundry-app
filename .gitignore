@@ -5,7 +5,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Tailwind CSS
-src/output.css
+# Jangan mengabaikan file CSS yang diperlukan!
+!css/output.css
 
 # Environment Variables
 .env
