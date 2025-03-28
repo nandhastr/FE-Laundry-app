@@ -1,0 +1,82 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #194376;
+  --secondary: #46C6CE;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #F3F6FF;
+  --dark: #1A1A1A;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Open Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #757575;
+  text-align: left;
+  background-color: #fff;
+}
+.border, .border-r, .border-b{
+   border: 0.5px solid #6c757d50;
+}
+.border-tag{
+  border: 1px solid #194376
+}
+.border-sosmed-footer{
+  
+  border: 1px solid #fff
+}
+.container{
+  padding-left: 2rem;
+  padding-right: 2rem;
+    width: 100%;
+    margin: 0, 0,0,0 !important;
+  }
+  .owl-stage-outer {
+  overflow: visible !important;
+}
+
+
+/* btn to top */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.btn-up {
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}

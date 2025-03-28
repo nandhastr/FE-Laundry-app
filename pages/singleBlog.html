@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> 
+    <!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/5f52f05008.js" crossorigin="anonymous"></script>
+     <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- carousel -->
+     <!-- <link rel="stylesheet" type="text/css" href="/owlcarousel/dist/assets/owl.carousel.css">
+     <link rel="stylesheet" type="text/css" href="/owlcarousel/dist/assets/owl.theme.default"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+     <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+        <title>LAUNDRY WEB | Detail Blog</title>
+
+</head>
+<body>
+    <!-- navbar -->
+    <section> 
+        <nav class=" bg-[#194376]  lg:h-[6rem] relative ">
+           <div class="lg:container mx-auto  py-4  flex lg:justify-between  lg:flex-row  flex-col gap-4 justify-center items-center">
+            <div class="flex gap-4 text-white">
+                <h1 class="hover:underline hover:cursor-pointer">FAQs</h1> |
+                <h1 class="hover:underline hover:cursor-pointer">Help</h1> |
+                <h1 class="hover:underline hover:cursor-pointer">Suport</h1> 
+            </div>
+            <div class="flex gap-8 text-white ">
+                <i class="hover:cursor-pointer fa-brands fa-facebook"></i>
+                <i class="hover:cursor-pointer fa-brands fa-twitter"></i>
+                <i class="hover:cursor-pointer fa-brands fa-linkedin"></i>
+                <i class="hover:cursor-pointer fab fa-instagram"></i>
+                <i class="hover:cursor-pointer fa-brands fa-youtube"></i>
+            </div>
+           </div>
+           <div class="lg:container    w-full  lg:left-1/2  top-[1/2] lg:transform lg:-translate-x-1/2 h-auto py-5 px-[3rem] bg-white lg:absolute  justify-between items-center flex lg:flex-row flex-col  lg:z-10">
+                   <div class="flex w-full justify-between items-center">
+                            <div class="flex hover:cursor-pointer">
+                                <h1 class="font-bold text-4xl text-[#194376]">Nan</h1>
+                                <h1 class="font-bold text-4xl text-[#46C6CE]">da</h1>
+                            </div>
+                        
+                        <button id="menu-toggle" class="lg:hidden  focus:outline-none text-2xl">
+                           <i class="fa-solid fa-bars "></i>
+                        </button>
+                   </div>
+
+               <ul id="menu" class="hidden lg:block lg:flex gap-8 lg:absolute lg:relative top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent lg:flex-row flex-col text-left px-4 lg:text-left">
+    <li class="text-[#6c757d] text-md font-semibold hover:text-[#46C6CE] py-2 lg:py-0"><a href="index.html">Home</a></li>
+    <li class="text-[#6c757d] text-md font-semibold hover:text-[#46C6CE] py-2 lg:py-0"><a href="about.html">About</a></li>
+    <li class="text-[#6c757d] text-md font-semibold hover:text-[#46C6CE] py-2 lg:py-0"><a href="services.html">Services</a></li>
+    <li class="text-[#6c757d] text-md font-semibold hover:text-[#46C6CE] py-2 lg:py-0"><a href="pricing.html">Pricing</a></li>
+
+   <li class="relative group pages-btn">
+        <div class="flex gap-1 items-center cursor-pointer">
+            <span class="text-[#6c757d] text-md font-semibold group-hover:text-[#46C6CE]">Pages</span>
+            <i class="fa-solid fa-caret-down text-[#6c757d] group-hover:text-[#46C6CE]"></i>
+        </div>
+        <ul class="bg-white  w-[10rem] h-auto lg:absolute hidden group-hover:block menu-btn-blog pt-8 pb-4 ">
+            <li class="w-full mb-3"><a href="blog.html" class="block text-lg px-4  text-[#000] hover:bg-[#194376] hover:text-[#fff]">Blog Grid</a></li>
+            <li class="w-full"><a href="singleBlog.html" class="block text-lg px-4  text-[#000] hover:bg-[#194376] hover:text-[#fff]">Blog Detail</a></li>
+        </ul>
+    </li>
+
+    <li class="text-[#6c757d] font-semibold hover:text-[#46C6CE] py-2 lg:py-0 text-md"><a href="contact.html">Contact</a></li>
+</ul>
+
+            </div>
+        </nav>
+    </section>
+
+<!-- hero  -->
+  <section class="mb-[8%]">
+    <div class="h-[25vh] lg:h-[35vh]  flex justify-between items-center  w-full bg-[#46C6CE]">
+        <div class="container mx-auto flex flex-col space-y-10 lg:flex-row justify-center lg:justify-between items-center ">
+            <h1 class="font-bold text-4xl text-white">Detail Page</h1>
+            <div class="flex justify-center items-center gap-2">
+                 <p class="text-[#F3F6FF]"><a href="index.html">Home</a></p>
+            <i class="fa-solid fa-angle-right text-[#F3F6FF]"></i>
+            <p class="text-[#F3F6FF]">Detail</p>
+            </div>
+        </div>
+    </div>
+ </section>
+
+ <!-- blog articles -->
+  <section class="mb-[8%]">
+    <div class="container mx-auto flex flex-col lg:grid lg:grid-cols-3 gap-8 mb-[4%]">
+        <div class="col-span-2 flex flex-col gap-8 ">
+            <div class="flex flex-col gap-4">
+                <p class="text-[#194376] uppercase">detail blog page</p>
+                <h1 class="font-bold text-4xl text-[#194376]">Diam dolor est ipsum clita lorem</h1>
+                <div class="flex  gap-4 justify-start items-center">
+                    <div class="flex justify-center items-center gap-1">
+                        <i class="text-[0.9rem] fa-solid fa-user text-[#194376]"></i>
+                        <p class="text-[#6c757d] text-[1rem]">Admin</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-1">
+                        <i class="text-[0.9rem] fa-solid fa-folder text-[#194376]"></i>
+                        <p class="text-[#6c757d] text-[1rem]">Web Design</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-1">
+                        <i class="text-[0.9rem] fa-solid far fa-comments text-[#194376]"></i>
+                        <p class="text-[#6c757d] text-[1rem]">15</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex flex-col gap-8">
+                <img src="../asset/img/blog-1.jpg" class="w-full " alt="">
+        <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.</p>
+        <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.</p>
+
+                    <h2 class="font-bold text-2xl text-[#194376]">Est dolor lorem et ea</h2>
+                    <div class="">
+                        <img class=" float-left mr-4 mb-3 w-1/2" src="../asset/img/blog-1.jpg"  alt="Image">
+                        <p class=" leading-relaxed">
+                            Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. 
+                            Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat 
+                            diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, 
+                            takimata ea nonumy elitr sadipscing gubergren erat.
+                            Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. 
+                            Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. 
+                            Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. 
+                            Et duo tempor sea kasd clita ipsum et.
+                        </p>
+                    </div>
+                    <h2 class="font-semibold text-2xl text-[#194376]">Est dolor lorem et ea</h2>
+                    <div class="">
+                        <img class=" float-right mr-4 mb-3 w-1/2" src="../asset/img/blog-2.jpg" alt="Image">
+                        <p class=" leading-relaxed">
+                            Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. 
+                            Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat 
+                            diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, 
+                            takimata ea nonumy elitr sadipscing gubergren erat.
+                            Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. 
+                            Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. 
+                            Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. 
+                            Et duo tempor sea kasd clita ipsum et.
+                        </p>
+                    </div>
+
+            </div>
+
+            <!-- related post -->
+            <div class="flex flex-col  gap-8">
+                <h1 class="font-bold text-2xl text-[#194376]">Related Post</h1>
+               <div class=" flex overflow-x-auto space-x-4 p-4 scrollbar-hide">
+                    <div class="carousel-wrapper flex space-x-4 w-full sm:w-full transition-transform duration-500">
+                        <div class="carousel-slide bg-white min-w-full md:min-w-[100%] lg:min-w-[10rem] h-auto flex flex-col shadow-lg">
+                            <div class="w-full lg:h-auto relative">
+                                <img src="../asset/img/blog-1.jpg" class="w-full h-full" alt="">
+                                <div class="bg-black absolute top-0 left-0 w-full h-full opacity-40 flex justify-center items-center"></div>
+                                <div class="absolute top-0 left-0 flex flex-col gap-4 justify-center items-center w-full h-full">
+                                    <h1 class="text-white text-2xl font-semibold text-center">Dolor sit amet clida kasd sanct ipsum</h1>
+                                </div>
+                            </div>
+                            <div class="flex justify-start items-center px-4 py-8">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quae minus impedit eveniet eligendi eaque, porro voluptatem neque molestiae modi..</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide bg-white min-w-full md:min-w-[100%] lg:min-w-[10rem] h-auto flex flex-col shadow-lg">
+                            <div class="w-full lg:h-auto relative">
+                                <img src="../asset/img/blog-2.jpg" class="w-full h-full" alt="">
+                                <div class="bg-black absolute top-0 left-0 w-full h-full opacity-40 flex justify-center items-center"></div>
+                                <div class="absolute top-0 left-0 flex flex-col gap-4 justify-center items-center w-full h-full">
+                                    <h1 class="text-white text-2xl font-semibold text-center">Dolor sit amet clida kasd sanct ipsum</h1>
+                                </div>
+                            </div>
+                            <div class="flex justify-start items-center px-4 py-8">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quae minus impedit eveniet eligendi eaque, porro voluptatem neque molestiae modi..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+             <!-- top coment -->
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-3xl text-[#194376]">3 Comments</h1>
+                <div class="flex gap-4">
+                    <img src="../asset/img/user.jpg" class="h-22 w-auto" alt="">
+                    <div class="flex flex-col gap-2 ">
+                        <div class="flex gap-2 text-[#194376]">
+                            <h1>John Doe </h1>
+                            <p>01 Jan 2045 at 12:00pm</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex dolorum? Similique voluptatibus ullam corrupti accusantium, obcaecati laborum pariatur sint optio aut consequuntur sunt id laboriosam enim inventore fugit fugiat.                  </p>
+
+                        <button class="bg-[#F3F6FF] p-1 text-[#000] w-fit text-[0.9rem]">Reply</button>
+                    </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-4">
+                    <img src="../asset/img/user.jpg" class="h-22 w-auto" alt="">
+                    <div class="flex flex-col gap-2 ">
+                        <div class="flex gap-2 text-[#194376] justify-start items-center">
+                            <h1>John Doe </h1>
+                            <p class="text-[0.8rem]"><i>01 Jan 2045 at 12:00pm</i></p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex dolorum? Similique voluptatibus ullam corrupti accusantium, obcaecati laborum pariatur sint optio aut consequuntur sunt id laboriosam enim inventore fugit fugiat.                  </p>
+
+                        <button class="bg-[#F3F6FF] p-1 text-[#000] w-fit text-[0.9rem]">Reply</button>
+
+                        <!-- reply -->
+                         <div class="flex flex-col gap-4">
+                <div class="flex gap-4">
+                    <img src="../asset/img/user.jpg" class="h-22 w-auto" alt="">
+                    <div class="flex flex-col gap-2 ">
+                        <div class="flex gap-2 text-[#194376] justify-start items-center">
+                            <h1>John Doe </h1>
+                            <p class="text-[0.8rem]"><i>01 Jan 2045 at 12:00pm</i></p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex dolorum? Similique voluptatibus ullam corrupti accusantium, obcaecati laborum pariatur sint optio aut consequuntur sunt id laboriosam enim inventore fugit fugiat.                  </p>
+
+                        <button class="bg-[#F3F6FF] p-1 text-[#000] w-fit text-[0.9rem]">Reply</button>
+                    </div>
+                </div>
+              </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- form commant -->
+               <div class="bg-[#F3F6FF] w-full p-8 flex flex-col gap-4">
+                 <h1 class="font-bold text-2xl text-[#194376]">Leave a comment</h1>
+                 <form action="" class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-2">
+                        <label for="">Nama*</label>
+                         <input type="text" class="border h-10 w-full  px-2" >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="">Email*</label>
+                         <input type="text" class="border h-10 w-full  px-2" >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="">Website*</label>
+                         <input type="text" class="border h-10 w-full  px-2" >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="">Message*</label>
+                        <textarea name="" id="" cols="30" rows="5" class="border  w-full  px-2" ></textarea>
+                    </div>
+                    
+                     <button class="p-2 w-fit bg-[#194376] text-[#fff] ">Leave Comment</button>
+                 </form>
+               </div>
+        </div>
+
+        <!-- kolom 3 -->
+         <div class="flex flex-col gap-8">
+            <div class="w-full h-[24rem] bg-[#46C6CE] mb-[8%] p-4 flex flex-col gap-4 justify-center items-center">
+                <div class="bg-white rounded-full w-25 h-25 flex justify-center items-center">
+                    <img src="../asset/img/user.jpg" class="rounded-full h-20 w-20" alt="">
+                </div>
+                <h1 class="text-2xl font-semibold text-[#194376]">John Doe</h1>
+                <p class="text-white text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste aspernatur molestiae illum adipisci natus ullam alias dolores incidunt rem sequi.</p>
+            </div>
+            <!-- form search -->
+             <form action="" class="flex justify-center items-center border mb-[8%]">
+                 <input type="text" class="h-12 border-r  w-full placeholder-[#6c757d] px-4" placeholder="Keyword">
+                 <div class="flex justify-center items-center  h-12 p-2">
+                    <i class="fa-solid fa-search font-bold text-[#194376]"></i>
+                 </div>
+             </form>
+             <div class="flex flex-col gap-4 mb-[8%]">
+                <h1 class="text-2xl font-bold text-[#194376]">Categories</h1>
+                <div class="flex flex-col border ">
+                    <div class="flex border-b justify-between w-full items-center p-2">
+                        <h5>Web Design</h5>
+                        <div class="flex justify-center text-white text-[0.7rem] items-center bg-[#194376] px-2 font-bold">150</div>
+                    </div>
+                    <div class="flex border-b justify-between w-full items-center p-2">
+                        <h5>Web Development</h5>
+                        <div class="flex justify-center text-white text-[0.7rem] items-center bg-[#194376] px-2 font-bold">131</div>
+                    </div>
+                    <div class="flex border-b justify-between w-full items-center p-2">
+                        <h5>Online Marketing</h5>
+                        <div class="flex justify-center text-white text-[0.7rem] items-center bg-[#194376] px-2 font-bold">78</div>
+                    </div>
+                    <div class="flex border-b justify-between w-full items-center p-2">
+                        <h5>keyword Research</h5>
+                        <div class="flex justify-center text-white text-[0.7rem] items-center bg-[#194376] px-2 font-bold">56</div>
+                    </div>
+                    <div class="flex justify-between w-full items-center p-2">
+                        <h5>Email Marketing</h5>
+                        <div class="flex justify-center text-white text-[0.7rem] items-center bg-[#194376] px-2 font-bold">98</div>
+                    </div>
+                </div>
+             </div>
+             <div class="flex flex-col gap-4 mb-[8%]">
+                <h1 class="text-2xl font-bold text-[#194376]">Recent Post</h1>
+                <div class="flex  gap-4  ">
+                    <div class="flex gap-4">
+                        <img src="../asset/img/blog-1.jpg" class="h-22 w-full" alt="">
+                    </div>
+                    <div class="flex flex-col  gap-2 ">
+                        <a href="blog.html" class="text-black text-[1rem] hover:underline">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </a>
+                            <div class="flex  gap-2 justify-start items-center">
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-user text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Admin</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-folder text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Web Design</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid far fa-comments text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">15</p>
+                                        </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="border"></div>
+                <div class="flex  gap-4  ">
+                    <div class="flex gap-4">
+                        <img src="../asset/img/blog-2.jpg" class="h-22 w-auto" alt="">
+                    </div>
+                    <div class="flex flex-col  gap-2 ">
+                        <a href="blog.html" class="text-black text-[1rem] hover:underline">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </a>
+                            <div class="flex  gap-2 justify-start items-center">
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-user text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Admin</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-folder text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Web Design</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid far fa-comments text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">15</p>
+                                        </div>
+                            </div>
+                    </div>
+                </div>
+                 <div class="border"></div>
+                <div class="flex  gap-4  ">
+                    <div class="flex gap-3">
+                        <img src="../asset/img/blog-1.jpg" class="h-22 w-auto" alt="">
+                    </div>
+                    <div class="flex flex-col  gap-2 ">
+                        <a href="blog.html" class="text-black text-[1rem] hover:underline">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </a>
+                            <div class="flex  gap-2 justify-start items-center">
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-user text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Admin</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-folder text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Web Design</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid far fa-comments text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">15</p>
+                                        </div>
+                            </div>
+                    </div>
+                </div>
+                 <div class="border"></div>
+                <div class="flex  gap-4  ">
+                    <div class="flex gap-4">
+                        <img src="../asset/img/blog-1.jpg" class="h-22 w-auto" alt="">
+                    </div>
+                    <div class="flex flex-col  gap-2 ">
+                        <a href="blog.html" class="text-black text-[1rem] hover:underline">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </a>
+                            <div class="flex  gap-2 justify-start items-center">
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-user text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Admin</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-folder text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Web Design</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid far fa-comments text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">15</p>
+                                        </div>
+                            </div>
+                    </div>
+                </div>
+                 <div class="border"></div>
+                <div class="flex  gap-4  ">
+                    <div class="flex gap-2">
+                        <img src="../asset/img/blog-1.jpg" class="h-22 w-auto" alt="">
+                    </div>
+                    <div class="flex flex-col  gap-2 ">
+                        <a href="blog.html" class="text-black text-[1rem] hover:underline">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </a>
+                            <div class="flex  gap-2 justify-start items-center">
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-user text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Admin</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid fa-folder text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">Web Design</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-1">
+                                            <i class="text-[0.7rem] fa-solid far fa-comments text-[#194376]"></i>
+                                            <p class="text-[#6c757d] text-[0.9rem]">15</p>
+                                        </div>
+                            </div>
+                    </div>
+                </div>
+                 <div class="border"></div>
+             </div>
+             <div class="mb-[8%]">
+                <img src="../asset/img/blog-1.jpg" class="w-full" alt="">
+             </div>
+             <div class="flex flex-col gap-4 mb-[8%]">
+                 <h1 class="text-2xl font-bold text-[#194376]">Tag Cloud</h1>
+                 <div class="flex flex-col gap-2">
+                    <div class="flex gap-2">
+                        <div class="border-tag  p-2 flex justify-center items-center text-[#194376] hover:bg-[#194376] hover:text-[#fff]"><p class="">Design</p></div>
+                        <div class="border-tag  p-2 flex justify-center items-center text-[#194376] hover:bg-[#194376] hover:text-[#fff]"><p class="">Development</p></div>
+                        <div class="border-tag  p-2 flex justify-center items-center text-[#194376] hover:bg-[#194376] hover:text-[#fff]"><p class="">Marketing</p></div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="border-tag  p-2 flex justify-center items-center text-[#194376] hover:bg-[#194376] hover:text-[#fff]"><p class="">SEO</p></div>
+                        <div class="border-tag  p-2 flex justify-center items-center text-[#194376] hover:bg-[#194376] hover:text-[#fff]"><p class="">Writing</p></div>
+                        <div class="border-tag  p-2 flex justify-center items-center text-[#194376] hover:bg-[#194376] hover:text-[#fff]"><p class="">Consulting</p></div>
+                    </div>
+                 </div>
+             </div>
+
+             <div class="mb-[8%]">
+                <img src="../asset/img/blog-2.jpg" class="w-full" alt="">
+             </div>
+             <div class="flex flex-col gap-4 mb-[8%]">
+                 <h1 class="text-2xl font-bold text-[#194376]">Plain Text</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati qui esse officiis, totam maiores animi ullam ipsam porro illo blanditiis! Modi, distinctio laudantium omnis temporibus cupiditate nesciunt harum tempore reiciendis eligendi! Nam impedit sed eligendi ea assumenda, aut numquam voluptas! Animi maiores id temporibus tenetur nihil commodi veritatis! Laudantium, cupiditate!</p>
+             </div>
+         </div>
+    </div>
+    
+ </section>
+
+
+<!-- footer -->
+<section>
+    <div class="grid grid-cols-1 lg:grid lg:grid-cols-2 gap-10 lg:gap-8 bg-[#194376] px-8 pt-14 pb-8 text-white">
+        <div class="grid grid-cols-1 md:grid md:grid-cols-2 gap-10 lg:gap-8">
+            <div class="flex flex-col gap-4 ">
+                 <div class="flex ">
+                    <h1 class="font-bold text-4xl text-[#fff]">Nan</h1>
+                    <h1 class="font-bold text-4xl text-[#46C6CE]">da</h1>
+                </div>
+                <div class="flex flex-col">
+                    <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sit no, sed kasd et ipsum dolor duo dolor</p>
+                </div>
+                <div class="flex  gap-2">
+                    <button class="hover:bg-white hover:text-black  bg-tranparent border-sosmed-footer rounded-full w-10 h-10 justify-center items-center flex text-[#fff] transition duration-300 ease-in-out"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="hover:bg-white hover:text-black  bg-tranparent border-sosmed-footer rounded-full w-10 h-10 justify-center items-center flex text-[#fff] transition duration-300 ease-in-out"><i class="fa-brands fa-facebook"></i></button>
+                    <button class="hover:bg-white hover:text-black  bg-tranparent border-sosmed-footer rounded-full w-10 h-10 justify-center items-center flex text-[#fff] transition duration-300 ease-in-out"><i class="fa-brands fa-linkedin"></i></button>
+                    <button class="hover:bg-white hover:text-black  bg-tranparent border-sosmed-footer rounded-full w-10 h-10 justify-center items-center flex text-[#fff] transition duration-300 ease-in-out"><i class="fa-brands fa-instagram"></i></button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 ">
+                 <div class="flex ">
+                    <h1 class="font-semibold text-xl text-[#fff]">Get In Touch</h1>
+                </div>
+                <div class="flex flex-col">
+                    <p>Dolor clita stet nonumy clita diam vero, et et ipsum diam labore</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-start items-center flex gap-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Location, City, Country</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-start items-center flex gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+62 9798675</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-start items-center flex gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Info@info.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid md:grid-cols-2 gap-10 lg:gap-8">
+            <div class="flex flex-col gap-4 ">
+                 <div class="flex ">
+                    <h1 class="font-semibold text-xl text-[#fff]">Quick Link</h1>
+                </div>
+                    <div class="flex flex-col gap-2 ">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-angle-right "></i>
+                        <a href="index.html" class="hover:underline">Home</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-angle-right "></i>
+                        <a href="about.html" class="hover:underline">About Us</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-angle-right "></i>
+                        <a href="services.html" class="hover:underline">Services</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-angle-right "></i>
+                        <a href="pricing.html" class="hover:underline">Pricing</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-angle-right "></i>
+                        <a href="contact.html" class="hover:underline">Contact Us</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="flex flex-col gap-4 ">
+                 <div class="flex ">
+                    <h1 class="font-semibold text-xl text-[#fff]">News Letter</h1>
+                </div>
+                    <div class=" ">
+                        <form action="" class="flex flex-col gap-4">
+                            <input type="text" class="bg-white h-10 w-full text-gray-500 px-2" placeholder="Your name">
+                            <input type="text" class="bg-white h-10 w-full text-gray-500 px-2" placeholder="Your email">
+                            <button class="h-15 w-full bg-[#46C6CE] text-[#000] text-xl hover:text-white transition duration-300 ease-in-out">Submit Now</button>
+                        </form>
+                        
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- copyright -->
+ <section>
+    <div class="bg-[#1A1A1A] h-[4rem] flex justify-center items-center text-white">
+        <p class="text-lg">©Nanda. All Rights Reserved.</p>
+    </div>
+ </section>
+
+
+ <!-- btn to up -->
+  <div class="bg-[#194376] h-10 w-10 absolute z-50 bottom-8 right-10 text-white font-bold text-2xl fixed flex justify-center items-center btn-up hover:bg-[#13335b] transition duration-300 ease-in-out">
+    <i class="fa-solid fa-angles-up"></i>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script type="text/javascript" src="../js/index.js" >  </script>
+
+
+</body>
+</html>
