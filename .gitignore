@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tailwind CSS
+src/output.css
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor Files
+.vscode/
+.idea/
+.DS_Store
+
+# Build Output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+yarn.lock
+package-lock.json
