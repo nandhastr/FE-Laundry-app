@@ -1,5 +1,5 @@
 {
     "version": 2,
-    "public": "pages",
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+    "builds": [{ "src": "pages/index.html", "use": "@vercel/static" }],
+    "routes": [{ "src": "/(.*)", "dest": "pages/$1" }]
 }
