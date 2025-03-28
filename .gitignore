@@ -4,9 +4,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Tailwind CSS
-# Jangan mengabaikan file CSS yang diperlukan!
-!css/output.css
 
 # Environment Variables
 .env
